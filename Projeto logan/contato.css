@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+
+}
+
+
+li:hover {
+    color: #d21617;
+}
+
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    color: aliceblue;
+    background-size: cover;
+    border: 5px solid rgb(68, 68, 68);
+    background-image: url('https://observatoriodocinema.uol.com.br/filmes/logan-wolverine-solitario-em-nova-foto-do-filme/attachment/logan-10/');
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(68, 68, 68) ;
+    background-color: rgb(68, 68, 68);
+
+}
+
+input {
+    margin-bottom: 30px;
+    color: white;
+    height: 30px;
+    border: white;
+    
+}
+
+textarea {
+    color: white;
+}
+
+
+footer {
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: white;
+}
+
+span {
+    color: aliceblue;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: aliceblue;
+    background-color: rgb(68, 68, 68);
+}
+
+span:hover {
+    color: #d21617;
+}
+
+@media ( max-width: 768px ) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+
+

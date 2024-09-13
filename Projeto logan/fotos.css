@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+
+* {
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   list-style: none;
+   text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 2s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    box-shadow: #d21617 0px 5px 15px;
+
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+
+}
+
+
+.banner-1 {
+    background-image: url("https://s2.glbimg.com/5mhmE6aNYvwxVs55Wm6f1Egzxho=/smart/e.glbimg.com/og/ed/f/original/2019/01/16/hugh_jackman_wolverine.jpg");
+}
+
+.banner-2 {
+    background-image: url("https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2017/03/06143216/logan-x23-hugh-jackman-patrick-stewart.jpg");
+}
+
+.banner-3 {
+    background-image: url("https://www.estrelando.com.br/uploads/2017/01/19/logan-1484850742.jpg");
+}
+
+.banner-4 {
+    background-image: url("https://pipocamoderna.com.br/storage/2017/01/logan-x23.jpg");
+}
+
+.banner-5 {
+    background-image: url("https://www.reporterdiario.com.br/wp-content/uploads/2017/03/11logan-divulga%C3%A7%C3%A3o-1.jpg");
+}
+
+.banner-6 {
+    background-image: url("https://media.gazetadopovo.com.br/2017/03/ba0bd72f2de9e688dbb0a6620eb009d1-gpMedium.jpg");
+
+}
+
+
+footer {
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family:"Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media ( max-width: 768px ) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr; 
+        margin-top: 150px;
+    }
+}
